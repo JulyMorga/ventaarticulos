@@ -1,0 +1,84 @@
+#links li{
+  background-color: #F4F4F4;
+  border: 1px solid #7C7C7C;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#links li a {
+  color: #333;
+  display: block;		/* Permite que el link ocupe todo el ancho del li*/
+  padding: .3em;
+  text-decoration: none;
+}
+#links li {
+  float: left;
+  width: 33%;
+}
+
+h1 {
+	/*color: #FFFFFF;*/
+}
+
+h1 {
+  text-align: center;
+} 
+
+body {
+  /*background-color: #7DD7F4;*/
+  color: black; /*Color letra*/
+
+}
+
+header {
+  margin-top: 10px;
+}
+
+.class-contenido {
+  /*Clase en css*/
+}
+
+.section {
+ background-color: white;
+ text-decoration: none;
+ list-style: none;
+}
+
+#imgfoto {
+  height: 130px;
+  max-width:  100%;
+  max-height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+}
+
+#links li {
+	text-align: center;
+	background-color: #FF0000;
+	margin: 0;
+}
+#links li:hover{	
+	/* accion al pasar el mouse */
+	background-color: #ff8080;
+}
+#links li a:active{	
+	/* accion al hacer click */
+	background-color: yellow;
+}
+
+.row .col .bd-example-row .row {
+  border: 3px solid #000000;  
+  background-color: yellow;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  align-items-center
+}
+
+.tabla {
+  border: 1px solid #999999; 
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  align-items-center
+}
