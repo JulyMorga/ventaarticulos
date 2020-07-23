@@ -82,3 +82,36 @@ header {
   padding-bottom: .25rem;
   align-items-center
 }
+
+.jumbotron {
+  background-color: #d0eef7;
+}
+
+/*Tags*/
+footer {
+  background-color: yellow;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 10px 10px 0 10px;
+}
+
+.btn {
+  /*width: 5em;*/
+}
+
+/*clases*/
+.btn-consultas {
+  width: 80%;
+}
+
+.contenedor {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  padding: 0em 2em 2em 2em;
+}
+
+.consultas {
+  flex: 1 150px;
+  padding: 2px 5px 2px 5px;
+}
