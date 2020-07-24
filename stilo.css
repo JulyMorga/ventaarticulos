@@ -84,19 +84,27 @@ header {
 }
 
 .jumbotron {
-  background-color: #d0eef7;
+  font-family:  Georgia, "Times New Roman";
+  background-color: #e8f5fc;
+  /*background-color: #F7D600;*/
+  margin-bottom: 0px;
 }
 
 /*Tags*/
 footer {
-  background-color: yellow;
+  background-color: #F7D600;
   margin-top: 10px;
   margin-bottom: 0;
+  text-align: center;
   padding: 10px 10px 0 10px;
 }
 
+footer .row {
+  margin: 0px auto;
+}
+
 .btn {
-  /*width: 5em;*/
+  width: 70%;
 }
 
 /*clases*/
@@ -107,11 +115,40 @@ footer {
 .contenedor {
   margin-right: auto;
   margin-left: auto;
-  max-width: 80%;
-  padding: 0em 2em 2em 2em;
+  padding: 1.5em 2em 2em 2em;
+  background-color: #FFFFFF;
+}
+.contenedor-consultas {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5em 2em 2em 2em;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 3px 7px 0 rgba(0,0,0,.12);
 }
 
 .consultas {
   flex: 1 150px;
   padding: 2px 5px 2px 5px;
+}
+
+.div-productos {
+  flex: 1 150px;
+  padding: 2px 5px 8px 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  text-align: center;
+  margin: 8px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.contenedor-padre{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0em 2em 2em 2em;
+  background-color: #FFFFFF;
+}
+body {
+  background-color: #FC851E ;
 }
