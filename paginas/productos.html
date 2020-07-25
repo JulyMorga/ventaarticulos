@@ -8,23 +8,56 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="../stilo.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
     <title>WebComprar</title>
   </head>
   <body>
+    
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+
+      <a class="navbar-brand" href="/paginas/index.html">MisComprasWeb</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </nav>-
+
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Productos</h1>
       </div>
     </div>
-    <article class="contenedor-padre col-md-9 .col-xs-12 center-block">
-     <section class="contenedor"> 
-        <div class="fila-producto d-flex flex-row flex-wrap">    
+    <div class="contenedor-padre col-md-9 col-xs-12 center-block">
+      <section class="contenedor">
+        <!--Me muestra la linea de navegacion entre paginas-->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Productos</li>
+          </ol>
+        </nav>
+        
+        <div class="fila-producto d-flex flex-row flex-wrap">
           <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
             <div>
               <h3>Atun</h3>
               <p>Lata de atun La Campagnola de 300g.</p>
             </div>
-            <div><button class="btn btn-primary" href="../imagenes/atun.png" role="button">Comprar</button></div>
+            <div><button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button></div>
           </div>
 
           <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
@@ -32,7 +65,7 @@
               <h3>Tomate</h3>
               <p>Lata de Tomate Noel de 300g.</p>
             </div>
-            <div><button class="btn btn-primary" href="../imagenes/tomate.png" role="button">Comprar</button></div>
+            <div><button class="btn btn-primary" href="../imagenes/tomate.png">Comprar</button></div>
           </div>
 
           <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
@@ -40,38 +73,42 @@
               <h3>Arroz</h3>
               <p>Paquete de arroz Molto de 1kg.</p>
             </div>
-            <div><button class="btn btn-primary" href="../imagenes/arroz.png" role="button">Comprar</button></div>
+            <div><button class="btn btn-primary" href="../imagenes/arroz.png">Comprar</button></div>
           </div>  
         </div>
-        <div class="d-flex flex-row flex-wrap">    
-          <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
+
+        <div class="fila-producto d-flex flex-row flex-wrap">
+           <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
             <div>
               <h3>Galletitas</h3>
               <p>Galletitas de agua Bagley 100gr.</p>
             </div>
-            <div><button class="btn btn-primary" href="../imagenes/atun.png" role="button">Comprar</button></div>
-          </div>
-
-          <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
             <div>
-              <h3>Agua</h3>
-              <p>Botella de agua 1.5L Pureza Nestle.</p>
+              <button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button>
             </div>
-            <div><button class="btn btn-primary" href="../imagenes/atun.png" role="button">Comprar</button></div>
-          </div>
+           </div>
 
-          <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-            <div>
-              <h3>Pila AA</h3>
-              <p>Pack de 6 pilas AA.</p>
+            <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
+              <div>
+                <h3>Pila AA</h3>
+                <p>Pack de 6 pilas AA.</p>
+              </div>
+              <div><button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button></div>
             </div>
-            <div><button class="btn btn-primary" href="../imagenes/atun.png" role="button">Comprar</button></div>
-          </div>
 
+            <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
+              <div>
+                <h3>Agua</h3>
+                <p>Botella de agua 1.5L Pureza nestle.</p>
+              </div>
+              <div>
+                <button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button>
+              </div>
+            </div>
         </div>
       </section>
 
-      <section class="contenedor-consultas"> 
+      <section class="contenedor-consultas">
         <div class="d-flex flex-wrap flex-row justify-content-center text-center" >    
           <div class="consultas d-flex flex-column justify-content-between">
             <div>
@@ -95,10 +132,9 @@
             </div>
             <div><button class="btn-consultas btn-primary" href="/paginas/contacto.html">Contacto</button></div>
           </div>
-
         </div>
       </section>
-</article>
+    </div>
 
     <footer class="container col-md-9 col-xs-12">
       <div class="row col-md-12 col-xl-10">
@@ -107,10 +143,10 @@
         </div>
 
         <div class="col-md-4">
+          <h4>Oficina Central:</h4>
           <address>
-            <h4>Oficina Central:</h4>
-            <p>Calle Falsa 123, CABA, Argentina.</p>
-            <p>+591112345678</p>
+            <p><span class="oi oi-home"></span> Calle Falsa 123, CABA, Argentina.</p>
+            <p><span class="oi oi-phone"></span> +591112345678</p>
           </address>
         </div>
         <div class="col-md-4 d-flex flex-column align-items-end">

@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="stilo.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <!-- icons.getbootstrap.com/  useiconic.com/open -->
     <title>WebComprar</title>
   </head>
   <body>
@@ -16,7 +18,13 @@
     </div>
 		
     <div class="contenedor col-md-9 col-xs-12">
-			<p class="lead">Bienvenidos!</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+      </nav>
+			<p class="lead">Bienvenidos!</p> 
+      <img class="iconic iconic-sm" data-src="sun.svg">
 			<p class="lead">Acá encontraras los productos más baratos del mercado.</p>
 			<p class="lead">Empecemos a comprar!.</p>
 			<a class="btn btn-primary" href="paginas/productos.html" role="button">Comprar</a>
@@ -31,8 +39,8 @@
         <div class="col-md-4">
           <address>
             <h4>Oficina Central:</h4>
-            <p>Calle Falsa 123, CABA, Argentina.</p>
-            <p>+591112345678</p>
+            <p><span class="oi oi-home"></span> Calle Falsa 123, CABA, Argentina.</p>
+            <p><span class="oi oi-phone"></span> +591112345678</p>
           </address>
         </div>
         <div class="col-md-4 d-flex flex-column align-items-end">

@@ -73,14 +73,14 @@ header {
   background-color: yellow;
   padding-top: .75rem;
   padding-bottom: .75rem;
-  align-items-center
+  align-items: center;
 }
 
 .tabla {
   border: 1px solid #999999; 
   padding-top: .25rem;
   padding-bottom: .25rem;
-  align-items-center
+  align-items: center;
 }
 
 .jumbotron {
@@ -88,6 +88,13 @@ header {
   background-color: #e8f5fc;
   /*background-color: #F7D600;*/
   margin-bottom: 0px;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    margin-top: 30px;
+  }
 }
 
 /*Tags*/
@@ -124,6 +131,10 @@ footer .row {
   padding: 1.5em 2em 2em 2em;
   background-color: #FFFFFF;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 3px 7px 0 rgba(0,0,0,.12);
+}
+
+.oi {
+  color: black;
 }
 
 .consultas {
