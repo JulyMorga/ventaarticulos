@@ -8,14 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="../stilo.css">
-  <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-
     <title>WebComprar</title>
   </head>
   <body>
-    
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
-
+      <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
       <a class="navbar-brand" href="/paginas/index.html">MisComprasWeb</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
@@ -24,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Productos</a>
+            <a class="nav-link" href="/paginas/productos.html">Productos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
@@ -35,85 +31,61 @@
           <li class="nav-item">
             <a class="nav-link" href="/paginas/contacto.html">Contacto</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/paginas/precios.html">Precios</a>
           </li>
         </ul>
       </div>
     </nav>
-
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Productos</h1>
+        <h1 class="display-4">Nosotros</h1>
       </div>
     </div>
-    <div class="contenedor-padre col-md-9 col-xs-12 center-block">
-      <section class="contenedor">
-        <!--Me muestra la linea de navegacion entre paginas-->
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Productos</li>
-          </ol>
-        </nav>
-        
-        <div class="fila-producto d-flex flex-row flex-wrap">
-          <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-            <div>
-              <h3>Atun</h3>
-              <p>Lata de atun La Campagnola de 300g.</p>
-            </div>
-            <div><button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button></div>
-          </div>
+    
+    <div class="contenedor col-xs-12 col-sm-12 col-md-8 center-block text-center" >
+    <div>
+      <p>Nuestro principal compromiso es entregar felicidad con la compra de nuestros productos. </p>
+          <p>Los podes encontrar en nuestras sucursales:</p>
+    </div>
 
-          <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-            <div>
-              <h3>Tomate</h3>
-              <p>Lata de Tomate Noel de 300g.</p>
-            </div>
-            <div><button class="btn btn-primary" href="../imagenes/tomate.png">Comprar</button></div>
-          </div>
-
-          <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-            <div>
-              <h3>Arroz</h3>
-              <p>Paquete de arroz Molto de 1kg.</p>
-            </div>
-            <div><button class="btn btn-primary" href="../imagenes/arroz.png">Comprar</button></div>
-          </div>  
-        </div>
-
-        <div class="fila-producto d-flex flex-row flex-wrap">
-           <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-            <div>
-              <h3>Galletitas</h3>
-              <p>Galletitas de agua Bagley 100gr.</p>
-            </div>
-            <div>
-              <button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button>
-            </div>
-           </div>
-
-            <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-              <div>
-                <h3>Pila AA</h3>
-                <p>Pack de 6 pilas AA.</p>
-              </div>
-              <div><button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button></div>
-            </div>
-
-            <div class="div-productos d-flex col-xs-3 col-md-4 flex-column justify-content-between">
-              <div>
-                <h3>Agua</h3>
-                <p>Botella de agua 1.5L Pureza nestle.</p>
-              </div>
-              <div>
-                <button class="btn btn-primary" href="../imagenes/atun.png">Comprar</button>
-              </div>
-            </div>
-        </div>
-      </section>
-
+    <h1>Precios de envio por cercania</h1>
+    <div class="table-responsive">
+      <table class="table table-striped ">
+        <thead class="thead-dark">
+          <th>Tiempo de entrega</th>
+          <th>5km</th>
+          <th>10km</th>
+          <th>20km</th>
+          <th>Mayor a 20km</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 día</td>
+            <td>$250</td>
+            <td>$300</td>
+            <td>$350</td>
+            <td>$440</td>
+          </tr>
+          <tr>
+            <td>2 días</td>
+            <td>$200</td>
+            <td>$250</td>
+            <td>$300</td>
+            <td>$390</td>
+          </tr>
+          <tr>
+            <td>3 días</td>
+            <td>$150</td>
+            <td>$200</td>
+            <td>$250</td>
+            <td>$300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      
+      
       <section class="contenedor-consultas">
         <div class="d-flex flex-wrap flex-row justify-content-center text-center" >    
           <div class="consultas d-flex flex-column justify-content-between">
@@ -142,23 +114,28 @@
       </section>
     </div>
 
-    <footer class="container col-md-9 col-xs-12">
-      <div class="row col-md-12 col-xl-10">
-        <div class="col-md-4 d-flex flex-column align-items-start">
+
+
+    <footer class="container col-md-8 .col-xs-12 center-block">
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
           <a href="www.mercadolibre.com">MercadoLibre</a>     
         </div>
 
-        <div class="col-md-4">
-          <h4>Oficina Central:</h4>
+        <div class="col-sm-4">
           <address>
-            <p><span class="oi oi-home"></span> Calle Falsa 123, CABA, Argentina</p>
-            <p><span class="oi oi-phone"></span> +591112345678</p>
+            <h4>Oficina Central:</h4>
+            <p>Calle Falsa 123, CABA, Argentina.</p>
+            <p>+591112345678</p>
           </address>
         </div>
-        <div class="col-md-4 d-flex flex-column align-items-end">
+        <div class="col-sm-4 d-flex flex-column align-items-end">
           <a href="/index.html">Inicio</a>
           <a href="/paginas/productos.html">Productos</a>
           <a href="/paginas/nosotros.html">Nosotros</a>     
+        </div>
+        <div class="col-sm-4">
+        
         </div>
       </div>  
     </footer>
