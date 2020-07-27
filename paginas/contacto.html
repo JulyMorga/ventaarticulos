@@ -20,57 +20,72 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Inicio</a>
+            <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/paginas/productos.html">Productos</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/paginas/contacto.html">Contacto</a>
+            <a class="nav-link" href="#">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Nosotros</h1>
+        <h1 class="display-4">Contactenos</h1>
       </div>
     </div>
     
-    <div class="contenedor col-xs-12 col-sm-12 col-md-8 center-block text-center" >
-    <div>
-      <p>Nuestro principal compromiso es entregar felicidad con la compra de nuestros productos. </p>
-          <p>Los podes encontrar en nuestras sucursales:</p>
+    <div class="contenedor col-xs-12 col-sm-12 col-md-8 center-block text-center">
+      <div class="contenedor-formulario col-md-10 center-block text-center">
+        <h1>Dejanos tu comentario</h1>
+        <form class="formulario">
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <label for="domicilio">Domicilio</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su domicilio">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="provincia">Provincia</label>
+              <select id="provincia" class="form-control">
+                <option selected>CABA</option>
+                <option>Buenos Aires</option>
+                <option>Entre Rios</option>
+                <option>Cordoba</option>
+                <option>Santa Fe</option>
+              </select>
+            </div>            
+          </div>
+          <div class="form-group">
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" class="form-control" rows="10" placeholder="Ingrese su comentario"></textarea>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>    
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
     </div>
-
-      <div class="d-flex tabla align-items-center">
-        <div class="col-2 col-md-3 font-weight-bold">Zona</div>
-        <div class="col-6 col-md-6 font-weight-bold">Dirección</div>
-        <div class="col-4 col-md-3 font-weight-bold">Ubicacion</div>
-      </div>
-      <!--  xs= muy chica. sm=576px, md=768px, lg=992px ,xl: 1200px-->
-      <div class="d-flex flex-wrap tabla align-items-center">
-        <div class="col-xs-2 col-md-3">Lomas del Mirador</div>
-        <address class="col-6 col-md-6">Calle falsa 123</address>
-        <div class="col-4 col-md-3 col-xs-3"><a class="btn btn-primary" href="https://www.google.com.ar/maps/preview" role="button">Ubicacion</a>
-        </div>
-      </div>
-
-      <div class="d-flex tabla align-items-center">
-        <div class="col-2 col-md-3">Ramos Mejia</div>
-        <div class="col-6 col-md-6">Av. de Mentira 888</div>
-        <div class="col-4 col-md-3"><a class="btn btn-primary" href="https://www.google.com.ar/maps/preview" role="button">Ubicacion</a></div>
-      </div>
-
-      <div class="d-flex tabla align-items-center">
-        <div class="col-2 col-md-3">Villa del Parque</div> 
-        <div class="col-6 col-md-6">Av. Parque falso 7272</div>
-        <div class="col-4 col-md-3"><a class="btn btn-primary" href="https://www.google.com.ar/maps/preview" role="button">Ubicacion</a></div>
-      </div>
-      
       <section class="contenedor-consultas">
         <div class="d-flex flex-wrap flex-row justify-content-center text-center" >    
           <div class="consultas d-flex flex-column justify-content-between">

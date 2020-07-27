@@ -125,6 +125,20 @@ footer .row {
   padding: 1.5em 2em 2em 2em;
   background-color: #FFFFFF;
 }
+
+.contenedor-padre{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0em 2em 2em 2em;
+  background-color: #FFFFFF;
+}
+
+.contenedor-formulario {
+  margin-right: auto;
+  margin-left: auto;
+  margin: 2em auto 2em auto;
+}
+
 .contenedor-consultas {
   margin-top: 15px;
   margin-right: auto;
@@ -155,13 +169,11 @@ footer .row {
   display: flex;
 }
 
-.contenedor-padre{
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0em 2em 2em 2em;
-  background-color: #FFFFFF;
-}
 
 body {
   background-color: #FC851E ;
+}
+
+.formulario {
+  text-align: left;
 }
