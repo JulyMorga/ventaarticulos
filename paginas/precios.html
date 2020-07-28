@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="../stilo.css">
+    <link rel="stylesheet" href="../stilo.css">
+    <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <title>WebComprar</title>
   </head>
   <body>
@@ -44,47 +45,82 @@
     </div>
     
     <div class="contenedor col-xs-12 col-sm-12 col-md-8 center-block text-center" >
-    <div>
-      <p>Nuestro principal compromiso es entregar felicidad con la compra de nuestros productos. </p>
-          <p>Los podes encontrar en nuestras sucursales:</p>
-    </div>
+      <div>
+        <p>Nuestro principal compromiso es entregar felicidad con la compra de nuestros productos. </p>
+            <p>Los podes encontrar en nuestras sucursales:</p>
+      </div>
 
-    <h1>Precios de envio por cercania</h1>
-    <div class="table-responsive">
-      <table class="table table-striped ">
-        <thead class="thead-dark">
-          <th>Tiempo de entrega</th>
-          <th>5km</th>
-          <th>10km</th>
-          <th>20km</th>
-          <th>Mayor a 20km</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1 día</td>
-            <td>$250</td>
-            <td>$300</td>
-            <td>$350</td>
-            <td>$440</td>
-          </tr>
-          <tr>
-            <td>2 días</td>
-            <td>$200</td>
-            <td>$250</td>
-            <td>$300</td>
-            <td>$390</td>
-          </tr>
-          <tr>
-            <td>3 días</td>
-            <td>$150</td>
-            <td>$200</td>
-            <td>$250</td>
-            <td>$300</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <h1>Precios de envio por cercania</h1>
+      <div class="table-responsive">
+        <table class="table table-striped ">
+          <thead class="thead-dark">
+            <th>Tiempo de entrega</th>
+            <th>Hasta 5km</th>
+            <th>Hasta 10km</th>
+            <th>Hasta 20km</th>
+            <th>Mayor a 20km</th>
+            <th>Mayor a 50km</th>
+            <th>Mayor a 100km</th>
+            <th>Mayor a 500km</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 día</td>
+              <td><span class="oi oi-dollar"></span> 250</td>
+              <td><span class="oi oi-dollar"></span> 300</td>
+              <td><span class="oi oi-dollar"></span> 350</td>
+              <td><span class="oi oi-dollar"></span> 440</td>
+              <td><span class="oi oi-dollar"></span> 640</td>
+              <td><span class="oi oi-dollar"></span> 840</td>
+              <td><span class="oi oi-dollar"></span> 1040</td>
+            </tr>
+            <tr>
+              <td>2 días</td>
+              <td><span class="oi oi-dollar"></span> 200</td>
+              <td><span class="oi oi-dollar"></span> 250</td>
+              <td><span class="oi oi-dollar"></span> 300</td>
+              <td><span class="oi oi-dollar"></span> 390</td>
+              <td><span class="oi oi-dollar"></span> 500</td>
+              <td><span class="oi oi-dollar"></span> 700</td>
+              <td><span class="oi oi-dollar"></span> 900</td>
+            </tr>
+            <tr>
+              <td>3 días</td>
+              <td><span class="oi oi-dollar"></span> 150</td>
+              <td><span class="oi oi-dollar"></span> 200</td>
+              <td><span class="oi oi-dollar"></span> 250</td>
+              <td><span class="oi oi-dollar"></span> 300</td>
+              <td><span class="oi oi-dollar"></span> 400</td>
+              <td><span class="oi oi-dollar"></span> 500</td>
+              <td><span class="oi oi-dollar"></span> 600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       
+      <div class="d-flex justify-content-center">
+        <div class="card col-md-8" style="padding: 0;">
+          <div class="card-header bg-primary text-light">
+            Formas de pago
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span class="oi oi-credit-card"></span> Tarjeta de Crédito</li>
+            <li class="list-group-item"><span class="oi oi-credit-card"></span> Tarjeta de Débito</li>
+            <li class="list-group-item">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cash" fill="currentColor">
+                <path fill-rule="evenodd" d="M15 4H1v8h14V4zM1 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H1z"/>
+                <path d="M13 4a2 2 0 0 0 2 2V4h-2zM3 4a2 2 0 0 1-2 2V4h2zm10 8a2 2 0 0 1 2-2v2h-2zM3 12a2 2 0 0 0-2-2v2h2zm7-4a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+              </svg> Efectivo</li>
+            <li class="list-group-item">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-upc-scan" fill="currentColor">
+                <path fill-rule="evenodd" d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                <path d="M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+              </svg>
+                QR MercadoPago</li>
+            
+          </ul>
+        </div>
+      </div>
       
       <section class="contenedor-consultas">
         <div class="d-flex flex-wrap flex-row justify-content-center text-center" >    
@@ -113,8 +149,6 @@
         </div>
       </section>
     </div>
-
-
 
     <footer class="container col-md-8 .col-xs-12 center-block">
       <div class="row">
