@@ -95,6 +95,11 @@ header {
   .jumbotron {
     margin-top: 30px;
   }
+
+  .foto-cabecera{
+   margin-top: 30px;
+   width: 100%;
+  }
 }
 
 /*Tags*/
@@ -148,6 +153,11 @@ footer .row {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 3px 7px 0 rgba(0,0,0,.12);
 }
 
+.contenedor-consultas:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,.22), 0 14px 56px rgba(0,0,0,.25);
+
+}
+
 .oi {
   color: black;
 }
@@ -165,6 +175,10 @@ footer .row {
   margin: 8px;
 }
 
+.div-productos:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,.22), 0 7px 20px rgba(0,0,0,.25);
+}
+
 .flex-container {
   display: flex;
 }
@@ -172,8 +186,14 @@ footer .row {
 
 body {
   background-color: #FC851E ;
+  text-align: center;
 }
 
 .formulario {
   text-align: left;
+}
+
+.foto-cabecera{
+ margin-top: 20px;
+ width: 100%;
 }
