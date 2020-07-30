@@ -197,3 +197,9 @@ body {
  margin-top: 20px;
  width: 100%;
 }
+
+/*Es un id se pone con #*/
+#myTabContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

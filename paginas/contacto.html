@@ -45,10 +45,10 @@
     </div>
     
     <div class="contenedor col-xs-12 col-sm-12 col-md-8 center-block text-center">
-      <div class="contenedor-formulario col-md-10 center-block text-center">
+      <div class="contenedor-formulario col-md-10 center-block">
         <h1>Dejanos tu comentario</h1>
         <form class="formulario">
-          <div class="form-row">
+          <div class="form-row formulario">
             <div class="form-group col-sm-6">
               <label for="nombre">Nombre</label>
               <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
@@ -83,8 +83,10 @@
             <textarea id="comentario" class="form-control" rows="10" placeholder="Ingrese su comentario"></textarea>
           </div>
           <div class="form-group">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>    
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>    
+            </div>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
