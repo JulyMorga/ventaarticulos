@@ -56,7 +56,40 @@
 			<p class="lead">Acá encontraras los productos más baratos del mercado.</p>
 			<p class="lead">Empecemos a comprar!.</p>
 			<a class="btn btn-primary" href="paginas/productos.html" role="button">Comprar</a>
+      <p></p>
+      <button type="button" class=" btn-outline-success" data-toggle="modal" data-target="#contacto">
+      Contactenos
+      </button>
 		</div>
+    
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contacto con MisComprasWeb</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: left;">
+          <form>
+            <div class="form-body">
+              <label for="recipient-name" class="col-form-label">Tu email:</label>
+              <input type="text" name="recipient-name" class="form-control" placeholder="xxxxx@tucorreo.com">
+            </div>
+            <div class="form-body">
+              <label for="mensage-name" class="col-form-label">Mensaje:</label>
+              <textarea class="form-control" type="text" name="mensage-name"> Hola! Quería saber sobre </textarea>
+            </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="container col-md-9 col-xs-12">
       <div class="row col-md-12 col-xl-10">
@@ -76,7 +109,7 @@
           <a href="/paginas/productos.html">Productos</a>
           <a href="/paginas/nosotros.html">Nosotros</a>     
         </div>
-      </div>  
+      </div> 
     </footer>
 
     <!-- Optional JavaScript -->
