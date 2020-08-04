@@ -50,7 +50,7 @@
         <p>Los podes encontrar en nuestras sucursales:</p>
       </div>
 
-      /*cambiar por class="nav nav-pills" si lo quiero como botones. tambien cambiar data-toggle="pill" en los li*/
+      <!--cambiar por class="nav nav-pills" si lo quiero como botones. tambien cambiar data-toggle="pill" en los li-->
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="precios-tab" data-toggle="tab" href="#precio" role="tab" aria-controls="home" aria-selected="true">Precio Envio</a>
@@ -113,6 +113,55 @@
           </div>
         </div>
         <div class="tab-pane fade" id="forma-pago" role="tabpanel" aria-labelledby="forma-tab">
+
+          <div id="accordion" class="col-md-6" style="margin-left: auto; margin-right: auto; margin-bottom: 20px;">
+            <div class="card center-block">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    QR MercadoPago
+                  </button>
+                </h5>
+              </div>
+
+              <!-- tengo que poner class="collapse show" si quiero que se vea desplegada.-->
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Para utilizar este medio de pago, debe tener instalada la app de MercadoPago y escanear el QR.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Tarjeta de debito
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Con este tipo de tarjeta tiene un 5% de descuento porque el pago se acredita automaticamente, y nos ayuda a sustistir.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Tarjeta de Crédito
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Con esta tarjeta puede obtener hasta 12 cuotas sin interes en productos nacionales.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <div class="d-flex justify-content-center">
             <div class="card col-md-8" style="padding: 0;">
               <div class="card-header bg-primary text-light">

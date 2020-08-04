@@ -122,8 +122,26 @@
       </section>
 
       <section class="contenedor-consultas">
-        <div class="d-flex flex-wrap flex-row justify-content-center text-center" >    
-          <div class="consultas d-flex flex-column justify-content-between">
+        <div class="row">
+          <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#quienes" aria-expanded="false" aria-controls="multicollapse1" >¿Quienes Somos?</button>
+          </div>
+          <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#compromiso" aria-expanded="false" aria-controls="compromiso" >¿Compromiso?</button>
+          </div>
+          <div class="col-sm-4">
+            <!--Aria-controls debe ser distinto para disinguir los distintos componentes-->
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contactenos" aria-expanded="false" aria-controls="multicollapse3" >Contactenos</button>
+          </div>          
+
+        </div>
+
+
+
+
+
+        <div class="row justify-content-center">
+          <div class="consultas collapse multi-collapse"  id="quienes">
             <div>
               <h3>¿Quienes somos?</h3>
               <p>Somos una empresa de venta de productos online.</p>
@@ -131,14 +149,14 @@
             <div> <button class="btn btn-primary" href="/paginas/nosotros.html">Nosotros</button></div>
           </div>
 
-          <div class="consultas d-flex flex-column justify-content-between">
+          <div class="consultas collapse multi-collapse justify-content-between" id="compromiso">
             <div>
               <h3>¿Compromiso?</h3>
               <p>Brindar calidad y responsabilidad para vos.</p>
             </div>
             <div><button class="btn btn-primary" href="">Compromiso</button></div>
           </div>
-          <div class="consultas d-flex flex-column justify-content-between">
+          <div class="consultas collapse multi-collapse column justify-content-between" id="contactenos">
             <div>
               <h3>Contactenos</h3>
               <p>Ante consultas o reclamos.</p>
