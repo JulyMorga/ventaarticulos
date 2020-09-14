@@ -1,0 +1,226 @@
+$yellow: #fffa19;
+$color_custom_jumbotron: #e8f5fc;
+
+
+/* Realizo una funcion para pasarle valores personalizados.  */
+@mixin margenes($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+#links li{
+  background-color: #F4F4F4;
+  border: 1px solid #7C7C7C;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#links li a {
+  color: #333;
+  display: block;		/* Permite que el link ocupe todo el ancho del li*/
+  padding: .3em;
+  text-decoration: none;
+}
+#links li {
+  float: left;
+  width: 33%;
+}
+
+h1 {
+	/*color: #FFFFFF;*/
+}
+
+h1 {
+  text-align: center;
+} 
+
+body {
+  /*background-color: #7DD7F4;*/
+  color: black; /*Color letra*/
+
+}
+
+header {
+  margin-top: 10px;
+}
+
+.class-contenido {
+  /*Clase en css*/
+}
+
+.section {
+ background-color: white;
+ text-decoration: none;
+ list-style: none;
+}
+
+#imgfoto {
+  height: 130px;
+  max-width:  100%;
+  max-height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+}
+
+#links li {
+	text-align: center;
+	background-color: #FF0000;
+	margin: 0;
+}
+#links li:hover{	
+	/* accion al pasar el mouse */
+	background-color: #ff8080;
+}
+#links li a:active{	
+	/* accion al hacer click */
+	background-color: $yellow;
+}
+
+.row .col .bd-example-row .row {
+  border: 3px solid #000000;  
+  background-color: $yellow;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  align-items: center;
+}
+
+.tabla {
+  border: 1px solid #999999; 
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  align-items: center;
+}
+
+.jumbotron {
+  font-family:  Georgia, "Times New Roman";
+  background-color: $color_custom_jumbotron;
+  /*background-color: #F7D600;*/
+  @include margenes(40px, 0px);
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    margin-top: 30px;
+  }
+
+  .foto-cabecera{
+   margin-top: 30px;
+   width: 100%;
+  }
+}
+
+/*Tags*/
+footer {
+  background-color: #F7D600;
+   @include margenes(10px,0px);
+  text-align: center;
+  padding: 10px 10px 0 10px;
+}
+
+footer .row {
+  margin: 0px auto;
+}
+
+.btn {
+  width: 70%;
+}
+
+/*clases*/
+.btn-consultas {
+  width: 80%;
+}
+
+.contenedor {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5em 2em 2em 2em;
+  background-color: #FFFFFF;
+}
+
+.contenedor-padre{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0em 2em 2em 2em;
+  background-color: #FFFFFF;
+}
+
+.contenedor-formulario {
+  margin-right: auto;
+  margin-left: auto;
+  margin: 2em auto 2em auto;
+}
+
+.contenedor-consultas {
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5em 2em 2em 2em;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 3px 7px 0 rgba(0,0,0,.12);
+}
+
+.contenedor-consultas:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,.22), 0 14px 56px rgba(0,0,0,.25);
+
+}
+
+.oi {
+  color: black;
+}
+
+.consultas {
+  flex: 1 150px;
+  padding: 2px 5px 2px 5px;
+  max-width: 20rem;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px 10px 5px 10px;
+  padding: 10px;
+  border: 1px solid #999999;
+}
+
+
+.div-productos {
+  flex: 1 150px;
+  padding: 2px 5px 8px 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  text-align: center;
+  margin: 8px;
+}
+
+.div-productos:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,.22), 0 7px 20px rgba(0,0,0,.25);
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+body {
+  background-color: #FC851E ;
+  text-align: center;
+}
+
+.formulario {
+  text-align: left;
+}
+
+.foto-cabecera{
+ margin-top: 20px;
+ width: 100%;
+}
+
+/*Es un id se pone con #*/
+#myTabContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#myTab {
+  padding-top: 20px;
+}
