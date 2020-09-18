@@ -5,19 +5,32 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
+    "imagemin": "imagemin images/* --out-dir images2",
+    "usemin": "usemin index.html -d dist --htmlmin true -o dist/index.html && usemin paginas/contacto.html -d dist/paginas --htmlmin true -o dist/paginas/contacto.html && usemin paginas/nosotros.html -d dist --htmlmin true -o dist/paginas/nosotros.html && usemin paginas/precios.html -d dist --htmlmin true -o dist/paginas/precios.html && usemin paginas/productos.html -d dist --htmlmin true -o dist/paginas/productos.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run scss && npm run usemin"
   },
   "author": "JMorganella",
   "license": "ISC",
   "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "less": "^3.12.2",
     "lite-server": "^2.5.4",
     "node-less": "^1.0.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.10.4",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
