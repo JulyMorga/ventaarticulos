@@ -1,4 +1,12 @@
 'use strict'
+// Installs
+// sudo npm -g install gulp-cli
+// sudo npm install gulp --save-dev
+// sudo npm install gulp-sass --save-dev
+// sudo npm install browser-sync --save-dev
+// npm install del gulp-imagemin --save-dev
+// npm install gulp-uglify gulp-usemin gulp-rev gulp-clean-css gulp-flatmap gulp-htmlmin --save-dev
+// npm install imagemin-mozjpeg imagemin-pngquant --save-dev
 
 var gulp = require('gulp'),
 sass = require('gulp-sass'),
@@ -41,6 +49,8 @@ gulp.task('clean', function(){
 });
 
 gulp.task('copyfonts', function(){
+	gulp.src('./*.html')
+		.pipe(gulp.dest('./dist'));
 	return gulp.src('./node_modules/open-iconic/font/fonts/*.{ttf,woff,eof,svg,eot,otf}*')
 				.pipe(gulp.dest('./dist/fonts'));
 });

@@ -10,7 +10,7 @@
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
     "imagemin": "imagemin imagenes/* --out-dir dist/imagenes",
-    "usemin": "usemin index.html -d dist --htmlmin true -o dist/index.html && usemin paginas/contacto.html -d dist/paginas --htmlmin true -o dist/paginas/contacto.html && usemin paginas/nosotros.html -d dist --htmlmin true -o dist/paginas/nosotros.html && usemin paginas/precios.html -d dist --htmlmin true -o dist/paginas/precios.html && usemin paginas/productos.html -d dist --htmlmin true -o dist/paginas/productos.html",
+    "usemin": "usemin paginas/index.html -d dist --htmlmin true -o dist/paginas/index.html && usemin paginas/contacto.html -d dist/paginas --htmlmin true -o dist/paginas/contacto.html && usemin paginas/nosotros.html -d dist --htmlmin true -o dist/paginas/nosotros.html && usemin paginas/precios.html -d dist --htmlmin true -o dist/paginas/precios.html && usemin paginas/productos.html -d dist --htmlmin true -o dist/paginas/productos.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
@@ -56,11 +56,6 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "concurrently": "^5.3.0",
-    "gulp-cache": "^1.1.3",
-    "imagemin-giflossy": "^5.1.10",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1",
-    "imagemin-zopfli": "^7.0.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
