@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap CSS -->
-    <!-- build:css css/index.css -->
+    <!-- build:css ../css/main.css -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -17,7 +17,7 @@
     
     <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
 
-      <a class="navbar-brand" href="/index.html">MisComprasWeb</a>
+      <a class="navbar-brand" href="/paginas/index.html">MisComprasWeb</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/paginas/index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Productos</a>
@@ -245,7 +245,7 @@
           </address>
         </div>
         <div class="col-md-4 d-flex flex-column align-items-end">
-          <a href="/index.html">Inicio</a>
+          <a href="/paginas/index.html">Inicio</a>
           <a href="/paginas/productos.html">Productos</a>
           <a href="/paginas/nosotros.html">Nosotros</a>     
         </div>
@@ -254,21 +254,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <!-- build:js dist/index.js -->
+    <!-- build:js ../js/main.js -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"  ></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--Script que debe definirse para ver el tooltip -->
-    <script type="text/javascript">
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        $('[data-toggle="popover"]').popover();
-        $('.carousel').carousel({
-          interval: 2200  /*2.2 segundos*/
-        });
-
-      });
-    </script>
+    <script src="../js/index.js"></script>
     <!-- endbuild -->
+    <!-- En js/index.js tengo el script que debe definirse para ver el tooltip -->
   </body>
 </html>

@@ -7,16 +7,16 @@
 
     <!-- Bootstrap CSS -->
 <!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <!-- build:css css/index.css -->
-    <link rel="stylesheet" href="../node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- build:css ../css/main.css -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <!-- endbuild -->
     <title>WebComprar</title>
   </head>
   <body>
       <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
-      <a class="navbar-brand" href="/index.html">MisComprasWeb</a>
+      <a class="navbar-brand" href="index.html">MisComprasWeb</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,19 +24,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/paginas/productos.html">Productos</a>
+            <a class="nav-link" href="productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/paginas/precios.html">Precios</a>
+            <a class="nav-link" href="precios.html">Precios</a>
           </li>
         </ul>
       </div>
@@ -80,7 +80,7 @@
                   <option>Cordoba</option>
                   <option>Santa Fe</option>
                 </select>
-              </div>            
+              </div>
             </div>
             <div class="form-group">
               <label for="comentario">Comentario</label>
@@ -92,7 +92,9 @@
                 <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>    
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div style="text-align: center;">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
           </form>
         </div>
       </section>
@@ -103,7 +105,9 @@
               <h3>¿Quienes somos?</h3>
               <p>Somos una empresa de venta de productos online.</p>
             </div>
-            <div> <a class="btn  btn-primary" href="/paginas/nosotros.html">Nosotros</a></div>
+            <div class="btn-consultas">
+              <a class="btn  btn-primary" href="nosotros.html">Nosotros</a>
+            </div>
           </div>
 
           <div class="consultas d-flex flex-column justify-content-between">
@@ -111,14 +115,18 @@
               <h3>¿Compromiso?</h3>
               <p>Brindar calidad y responsabilidad para vos.</p>
             </div>
-            <div><a class="btn btn-primary" href="">Compromiso</a></div>
+            <div class="btn-consultas">
+              <a class="btn btn-primary" href="">Compromiso</a>
+            </div>
           </div>
           <div class="consultas d-flex flex-column justify-content-between">
             <div>
               <h3>Contactenos</h3>
               <p>Ante consultas o reclamos.</p>
             </div>
-            <div><a class="btn btn-primary" href="/paginas/contacto.html">Contacto</a></div>
+            <div class="btn-consultas">
+              <a class="btn btn-primary" href="contacto.html">Contacto</a>
+            </div>
           </div>
         </div>
       </section>
@@ -140,9 +148,9 @@
           </address>
         </div>
         <div class="col-sm-4 d-flex flex-column align-items-end">
-          <a href="/index.html">Inicio</a>
-          <a href="/paginas/productos.html">Productos</a>
-          <a href="/paginas/nosotros.html">Nosotros</a>     
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html">Nosotros</a>     
         </div>
         <div class="col-sm-4">
         
@@ -155,11 +163,11 @@
 <!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
-    <!-- build:js js/index.js -->
+    <!-- build:js ../js/main.js -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"  ></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
     <!-- endbuild -->
-
   </body>
 </html>
